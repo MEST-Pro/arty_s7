@@ -1,0 +1,3 @@
+fpga_pll_clk_wiz.v,verilog,xil_defaultlib,../../../../project_arty_s7.gen/sources_1/ip/fpga_pll/fpga_pll_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+fpga_pll.v,verilog,xil_defaultlib,../../../../project_arty_s7.gen/sources_1/ip/fpga_pll/fpga_pll.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v
