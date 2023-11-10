@@ -31,21 +31,23 @@ module alu #(
 );
 
 // define alu instructions
-localparam [3:0] ALU_REGA  = 4'h1;
-localparam [3:0] ALU_ADD   = 4'h2;
-localparam [3:0] ALU_SUB   = 4'h3;
-localparam [3:0] ALU_AND   = 4'h4;
-localparam [3:0] ALU_OR    = 4'h5;
-localparam [3:0] ALU_XOR   = 4'h6;
-localparam [3:0] ALU_OUT   = 4'h7;
-localparam [3:0] ALU_RESET = 4'h8;
+localparam [3:0] ALU_REGA   = 4'h1;
+localparam [3:0] ALU_ADD    = 4'h2;
+localparam [3:0] ALU_SUB    = 4'h3;
+localparam [3:0] ALU_AND    = 4'h4;
+localparam [3:0] ALU_OR     = 4'h5;
+localparam [3:0] ALU_XOR    = 4'h6;
+localparam [3:0] ALU_LSHIFT = 4'h7;
+localparam [3:0] ALU_RSHIFT = 4'h8;
+localparam [3:0] ALU_OUT    = 4'h9;
+localparam [3:0] ALU_RESET  = 4'hA;
 
+// declare register variables
 reg [DATA_WIDTH-1:0] registerA;
 reg [DATA_WIDTH-1:0] accumulator;
 reg [DATA_WIDTH-1:0] outputBus;
 
-always@(posedge clk or a_reset_n) begin
-
+always@(posedge clk or negedge a_reset_n) begin
     if (!a_reset_n) begin // asynchronous reset
         registerA   <= {DATA_WIDTH{1'b0}};
         accumulator <= {DATA_WIDTH{1'b0}};
@@ -56,8 +58,10 @@ always@(posedge clk or a_reset_n) begin
             ALU_ADD: accumulator <= accumulator + registerA; // addition
             ALU_SUB: accumulator <= accumulator - registerA; // subtraction
             ALU_AND: accumulator <= accumulator & registerA; // bitwise and
-            ALU_OR:  accumulator <= accumulator | registerA; // bitwise or
+            ALU_OR: accumulator <= accumulator | registerA; // bitwise or
             ALU_XOR: accumulator <= accumulator ^ registerA; // bitwise xor
+            ALU_LSHIFT: accumulator <= {accumulator[DATA_WIDTH-2:0],1'b0}; // left shift
+            ALU_RSHIFT: accumulator <= {1'b0,accumulator[DATA_WIDTH-1:1]}; // right shift
             ALU_OUT: outputBus <= accumulator; // send output data
             ALU_RESET: accumulator <= {DATA_WIDTH{1'b0}}; // reset the accumulator
             default: accumulator <= accumulator; // do nothing
