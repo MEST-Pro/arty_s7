@@ -2,7 +2,7 @@
 // Company: 
 // Engineer: Kirk Goleniak
 // 
-// Create Date: 11/09/2023 06:22:37 PM
+// Create Date: 11/09/2023 06:33:22 PM
 // Design Name: 
 // Module Name: mac
 // Project Name: 
@@ -22,33 +22,45 @@
 
 module mac #(
     parameter DATA_WIDTH = 8
-)(
-    input wire                    clk,
-    input wire                    a_reset, // asynchronous reset
-	input wire [DATA_WIDTH-1:0]   op_a,
-	input wire [DATA_WIDTH-1:0]   op_b,
-	output reg [2*DATA_WIDTH-1:0] result
+)(  
+    input  wire                  clk,
+    input  wire                  a_reset_n, // asynchronous reset
+    input  wire [DATA_WIDTH-1:0] data_in,
+    input  wire [3:0]            opcode,
+    output wire [DATA_WIDTH-1:0] data_out
 );
-    
-    // declare register variables
-	reg [DATA_WIDTH-1:0] op_a_reg;
-	reg [DATA_WIDTH-1:0] op_b_reg;
-	
-	// declare multipler net
-	wire [2*DATA_WIDTH-1:0] mult;
 
-	assign mult = op_a_reg * op_b_reg; // multiplier
+`include "sap1_header.vh"
 
-	always @ (posedge clk or posedge a_reset) begin
-		if (a_reset) begin // asynchronous reset
-			op_a_reg <= 0;
-			op_b_reg <= 0;
-			result <= 0; // reset the accumulator
-		end else begin
-			op_a_reg <= op_a;
-			op_b_reg <= op_b;
-			result <= result + mult; // accumulate the multiplier result
-		end
-	end
+// declare register variables
+reg [DATA_WIDTH-1:0] registerA;
+reg [DATA_WIDTH-1:0] registerB;
+reg [2*DATA_WIDTH-1:0] registerC; // store the result of the multiplication
+reg [2*DATA_WIDTH-1:0] accumulator;
+reg [DATA_WIDTH-1:0] outputBus;
+
+always@(posedge clk or negedge a_reset_n) begin
+    if (a_reset_n == 1'b0) begin // asynchronous reset
+        registerA   <= {DATA_WIDTH{1'b0}};
+        registerB   <= {DATA_WIDTH{1'b0}};
+        registerC   <= {2*DATA_WIDTH{1'b0}};
+        accumulator <= {2*DATA_WIDTH{1'b0}};
+        outputBus   <= {DATA_WIDTH{1'b0}};
+    end else begin
+        case (opcode)
+            MAC_REGA: registerA <= data_in; // load register A
+            MAC_REGB: registerB <= data_in; // load register B
+            MAC_MULT: registerC <= registerA * registerB; // multiply
+            MAC_ACC: accumulator <= accumulator + registerC; // accumulate
+            MAC_MSW: outputBus <= accumulator[2*DATA_WIDTH-1:1*DATA_WIDTH]; // output MSB
+            MAC_LSW: outputBus <= accumulator[1*DATA_WIDTH-1:0*DATA_WIDTH]; // output LSB
+            MAC_RESET: accumulator <= {2*DATA_WIDTH{1'b0}}; // reset accumulator
+            default: accumulator <= accumulator; // do nothing
+        endcase
+    end
+end
+
+// drive the output data bus
+assign data_out = outputBus;
 
 endmodule

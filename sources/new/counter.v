@@ -23,24 +23,26 @@
 module counter #(
     parameter COUNT_WIDTH = 8
 )(  
-    input  wire clk,
-    input  wire s_reset_n, // synchronous reset
-    input  wire enable, 
-    input  wire inc_en,
-    input  wire dec_en,
-    output reg [COUNT_WIDTH-1:0] counter
+    input  wire                   clk,
+    input  wire                   a_reset_n, // asynchronous reset
+    input  wire                   reset,
+    input  wire                   load, 
+    input  wire [COUNT_WIDTH-1:0] load_data,
+    input  wire                   increment,
+    output reg  [COUNT_WIDTH-1:0] counter
 );
 
-always @ (posedge clk)
+always @ (posedge clk or negedge a_reset_n)
     
-    if (s_reset_n == 1'b0) begin // if synchronous reset is asserted
-       counter <= {COUNT_WIDTH{1'b0}}; 
-    end else if (enable == 1'b1 && inc_en == 1'b1) begin // if counter is enabled and up count is asserted
+    if (a_reset_n == 1'b0) // asynchronous reset
+       counter <= {COUNT_WIDTH{1'b0}};
+    else if (reset == 1'b1) // processor reset
+        counter <= {COUNT_WIDTH{1'b0}};
+    else if (load == 1'b1) // load the counter
+       counter <= load_data;
+    else if (increment == 1'b1) // increment the counter
        counter <= counter + 1'b1;
-    end else if (enable == 1'b1 && dec_en == 1'b1) begin // if counter is enable and down count is asserted
-       counter <= counter - 1'b1;
-    end else begin // if counting is disabled
+    else // if counting is disabled
        counter <= counter;
-    end
 
 endmodule

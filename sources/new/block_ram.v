@@ -36,9 +36,10 @@ reg [RAM_WIDTH-1:0] mem[0:RAM_DEPTH-1];
 
 always@(posedge clk) begin
 
-    if (wen)
+    if (wen) begin
         mem[addr] <= wdata; // write data
-   
+    end
+    
     rdata <= mem[addr]; // read data
     
 end

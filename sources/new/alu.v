@@ -27,31 +27,22 @@ module alu #(
     input  wire                  a_reset_n, // asynchronous reset
     input  wire [DATA_WIDTH-1:0] data_in,
     input  wire [3:0]            opcode,
-    output wire [DATA_WIDTH-1:0] data_out
+    output wire                  acc_overflow,
+    output wire                  acc_zero,
+    output reg  [DATA_WIDTH-1:0] data_out
 );
 
-// define alu instructions
-localparam [3:0] ALU_REGA   = 4'h1;
-localparam [3:0] ALU_ADD    = 4'h2;
-localparam [3:0] ALU_SUB    = 4'h3;
-localparam [3:0] ALU_AND    = 4'h4;
-localparam [3:0] ALU_OR     = 4'h5;
-localparam [3:0] ALU_XOR    = 4'h6;
-localparam [3:0] ALU_LSHIFT = 4'h7;
-localparam [3:0] ALU_RSHIFT = 4'h8;
-localparam [3:0] ALU_OUT    = 4'h9;
-localparam [3:0] ALU_RESET  = 4'hA;
+`include "sap1_header.vh"
 
 // declare register variables
 reg [DATA_WIDTH-1:0] registerA;
-reg [DATA_WIDTH-1:0] accumulator;
-reg [DATA_WIDTH-1:0] outputBus;
+reg [DATA_WIDTH:0] accumulator;
 
 always@(posedge clk or negedge a_reset_n) begin
-    if (!a_reset_n) begin // asynchronous reset
+    if (a_reset_n == 1'b0) begin // asynchronous reset
         registerA   <= {DATA_WIDTH{1'b0}};
-        accumulator <= {DATA_WIDTH{1'b0}};
-        outputBus   <= {DATA_WIDTH{1'b0}};
+        accumulator <= {(DATA_WIDTH+1){1'b0}};
+        data_out    <= {DATA_WIDTH{1'b0}};
     end else begin
         case (opcode)
             ALU_REGA: registerA <= data_in; // load the register
@@ -62,13 +53,18 @@ always@(posedge clk or negedge a_reset_n) begin
             ALU_XOR: accumulator <= accumulator ^ registerA; // bitwise xor
             ALU_LSHIFT: accumulator <= {accumulator[DATA_WIDTH-2:0],1'b0}; // left shift
             ALU_RSHIFT: accumulator <= {1'b0,accumulator[DATA_WIDTH-1:1]}; // right shift
-            ALU_OUT: outputBus <= accumulator; // send output data
+            ALU_OUT: data_out <= accumulator[DATA_WIDTH-1:0]; // send output data
             ALU_RESET: accumulator <= {DATA_WIDTH{1'b0}}; // reset the accumulator
             default: accumulator <= accumulator; // do nothing
         endcase
+        
     end
 end
 
-assign data_out = outputBus;
+// assert control signal when accumulator is zero
+assign acc_zero = (accumulator == {(DATA_WIDTH+1){1'b0}});
+
+// assert overflow flag when MSB is set
+assign acc_overflow = accumulator[DATA_WIDTH];
 
 endmodule
