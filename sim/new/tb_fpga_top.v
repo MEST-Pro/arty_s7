@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -19,12 +18,20 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+`timescale 1ns / 1ns
+
 module tb_fpga_top;
 
 //////////////////////////////////////////////////////////////////////////////////
 // DUT
 //////////////////////////////////////////////////////////////////////////////////
 
+localparam ROM_DEPTH = 256;
+
+integer i; // loop variable
+
+// Oscillator
+reg CLK100MHZ;
 // Buttons
 reg [3:0] BTN;
 // Slide Switches
@@ -37,33 +44,50 @@ wire [1:0] BLED;
 wire [3:0] LED;
 
 fpga_top dut(
+    // Oscillator
+    .CLK100MHZ(CLK100MHZ),
     // Buttons
-    .BTN    (BTN),
+    .BTN(BTN),
     // Slide Switches
-    .SW     (SW),
+    .SW(SW),
     // Tri-Color LED
-    .RLED   (RLED),
-    .GLED   (GLED),
-    .BLED   (BLED),
+    .RLED(RLED),
+    .GLED(GLED),
+    .BLED(BLED),
     // User LED
-    .LED    (LED)
+    .LED(LED)
 );
+
+always
+    #5 CLK100MHZ = !CLK100MHZ;
 
 //////////////////////////////////////////////////////////////////////////////////
 // Test Bench
 //////////////////////////////////////////////////////////////////////////////////
 initial begin
 
-    $monitor("SW = %b | LED = %b",SW,LED[1:0]);
+    //// Initialization ////
+
+    // default state
+    CLK100MHZ = 1'b0;
+    BTN = 4'b0000;
+    SW = 4'b0000;
     
-    SW = 4'b0000; #5;
-    SW = 4'b0001; #5;
-    SW = 4'b0010; #5;
-    SW = 4'b0100; #5;
-    SW = 4'b1000; #5;
-    SW = 4'b0011; #5;
-    SW = 4'b1100; #5;
-    SW = 4'b1111; #5;
+    // power on reset
+    BTN[0] = 1'b1; #100;
+    BTN[0] = 1'b0;
+    
+    // clock & reset
+    while (dut.pll_lock == 1'b0) #10; // wait for PLL lock
+    while (dut.s_reset == 1'b1) #10; // wait for reset to release
+
+    //// Load Program ////
+    
+    BTN[1] = 1'b1; #10; // start program transfer
+    
+    for (i = 0; i < ROM_DEPTH; i = i + 1) begin
+        #80; // wait for instruction to update
+    end
 
 end
 

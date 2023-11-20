@@ -30,7 +30,7 @@ localparam COUNT_WIDTH = 4;
 
 // input
 reg clk;
-reg s_reset_n;
+reg s_reset;
 reg enable;
 reg inc_en;
 reg dec_en;
@@ -39,7 +39,7 @@ wire [COUNT_WIDTH-1:0] counter;
 
 counter #(.COUNT_WIDTH(COUNT_WIDTH)) dut(
     .clk        (clk),
-    .s_reset_n  (s_reset_n),
+    .s_reset    (s_reset),
     .enable     (enable),
     .inc_en     (inc_en),
     .dec_en     (dec_en),
@@ -60,8 +60,8 @@ initial begin
     inc_en = 1'b0;
     dec_en = 1'b0;
     
-    s_reset_n = 1'b0; #10; // assert reset
-    s_reset_n = 1'b1;
+    s_reset = 1'b1; #10; // assert reset
+    s_reset = 1'b0;
 
     enable = 1'b1; #40; // enable counter
     

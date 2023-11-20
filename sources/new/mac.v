@@ -27,7 +27,8 @@ module mac #(
     input  wire                  a_reset_n, // asynchronous reset
     input  wire [DATA_WIDTH-1:0] data_in,
     input  wire [3:0]            opcode,
-    output wire [DATA_WIDTH-1:0] data_out
+    input  wire                  acc_overflow,
+    output reg  [DATA_WIDTH-1:0] data_out
 );
 
 `include "sap1_header.vh"
@@ -36,8 +37,7 @@ module mac #(
 reg [DATA_WIDTH-1:0] registerA;
 reg [DATA_WIDTH-1:0] registerB;
 reg [2*DATA_WIDTH-1:0] registerC; // store the result of the multiplication
-reg [2*DATA_WIDTH-1:0] accumulator;
-reg [DATA_WIDTH-1:0] outputBus;
+reg [2*DATA_WIDTH:0] accumulator;
 
 always@(posedge clk or negedge a_reset_n) begin
     if (a_reset_n == 1'b0) begin // asynchronous reset
@@ -45,22 +45,22 @@ always@(posedge clk or negedge a_reset_n) begin
         registerB   <= {DATA_WIDTH{1'b0}};
         registerC   <= {2*DATA_WIDTH{1'b0}};
         accumulator <= {2*DATA_WIDTH{1'b0}};
-        outputBus   <= {DATA_WIDTH{1'b0}};
+        data_out    <= {DATA_WIDTH{1'b0}};
     end else begin
         case (opcode)
             MAC_REGA: registerA <= data_in; // load register A
             MAC_REGB: registerB <= data_in; // load register B
             MAC_MULT: registerC <= registerA * registerB; // multiply
             MAC_ACC: accumulator <= accumulator + registerC; // accumulate
-            MAC_MSW: outputBus <= accumulator[2*DATA_WIDTH-1:1*DATA_WIDTH]; // output MSB
-            MAC_LSW: outputBus <= accumulator[1*DATA_WIDTH-1:0*DATA_WIDTH]; // output LSB
+            MAC_MSW: data_out <= accumulator[2*DATA_WIDTH-1:1*DATA_WIDTH]; // output MSB
+            MAC_LSW: data_out <= accumulator[1*DATA_WIDTH-1:0*DATA_WIDTH]; // output LSB
             MAC_RESET: accumulator <= {2*DATA_WIDTH{1'b0}}; // reset accumulator
             default: accumulator <= accumulator; // do nothing
         endcase
     end
 end
 
-// drive the output data bus
-assign data_out = outputBus;
+// assert overflow flag when MSB is set
+assign acc_overflow = accumulator[2*DATA_WIDTH];
 
 endmodule

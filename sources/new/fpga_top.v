@@ -226,10 +226,10 @@ bus_mux #(.NUM_INPUT(NUM_BUS_INPUT),.NUM_OUTPUT(NUM_BUS_OUTPUT),.SEL_BIT(3),.DAT
 
 wire [DATA_WIDTH-1:0] ctrl_data_out;
 
-sap1_controller cpu_controller (
+sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH)) cpu_controller (
     .clk                (clk100MHz),
     .a_reset_n          (rst100MHz),
-    .start              (start),
+    .start              (BTN[1]),
     .inst_reg           (inst_reg_data_out),
     .pc_reset           (pc_reset),
     .pc_load            (pc_load),
@@ -258,12 +258,12 @@ assign bus_data_in[4*DATA_WIDTH+:DATA_WIDTH] = inst_reg_data_out;
 assign bus_data_in[5*DATA_WIDTH+:DATA_WIDTH] = ctrl_data_out;
 
 // bus output logic
-assign bus_data_out[0*DATA_WIDTH+:DATA_WIDTH] = {{(DATA_WIDTH-ADDR_WIDTH){1'b0}},pc_load_data};
-assign bus_data_out[1*DATA_WIDTH+:DATA_WIDTH] = {{(DATA_WIDTH-ADDR_WIDTH){1'b0}},addr_reg_data_in};
-assign bus_data_out[2*DATA_WIDTH+:DATA_WIDTH] = data_reg_data_in;
-assign bus_data_out[3*DATA_WIDTH+:DATA_WIDTH] = alu_data_in;
-assign bus_data_out[4*DATA_WIDTH+:DATA_WIDTH] = mac_data_in;
-assign bus_data_out[5*DATA_WIDTH+:DATA_WIDTH] = inst_reg_data_in;
-assign bus_data_out[6*DATA_WIDTH+:DATA_WIDTH] = out_reg_data_in;
+assign pc_load_data     = bus_data_out[0*DATA_WIDTH+:ADDR_WIDTH];
+assign addr_reg_data_in = bus_data_out[1*DATA_WIDTH+:ADDR_WIDTH];
+assign data_reg_data_in = bus_data_out[2*DATA_WIDTH+:DATA_WIDTH];
+assign alu_data_in      = bus_data_out[3*DATA_WIDTH+:DATA_WIDTH];
+assign mac_data_in      = bus_data_out[4*DATA_WIDTH+:DATA_WIDTH];
+assign inst_reg_data_in = bus_data_out[5*DATA_WIDTH+:DATA_WIDTH];
+assign out_reg_data_in  = bus_data_out[6*DATA_WIDTH+:DATA_WIDTH];
 
 endmodule

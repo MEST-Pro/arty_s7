@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../project_arty_s7.gen/sources_1/ip/fpga_rom/sim/fpga_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -22,20 +22,13 @@
 
 module tb_alu;
 
+`include "sap1_header.vh"
+
 //////////////////////////////////////////////////////////////////////////////////
 // DUT
 //////////////////////////////////////////////////////////////////////////////////
 
 localparam DATA_WIDTH = 8;
-
-localparam [3:0] ALU_REGA  = 4'h1;
-localparam [3:0] ALU_ADD   = 4'h2;
-localparam [3:0] ALU_SUB   = 4'h3;
-localparam [3:0] ALU_AND   = 4'h4;
-localparam [3:0] ALU_OR    = 4'h5;
-localparam [3:0] ALU_XOR   = 4'h6;
-localparam [3:0] ALU_OUT   = 4'h7;
-localparam [3:0] ALU_RESET = 4'h8;
 
 // input
 reg                   clk;
@@ -43,14 +36,18 @@ reg                   a_reset_n;
 reg  [DATA_WIDTH-1:0] data_in;
 reg  [3:0]            opcode;
 // output
+wire                  acc_overflow;
+wire                  acc_zero;
 wire [DATA_WIDTH-1:0] data_out;
 
 alu #(.DATA_WIDTH(DATA_WIDTH)) dut(
-    .clk        (clk),
-    .a_reset_n  (a_reset_n),
-    .data_in    (data_in),
-    .opcode     (opcode),
-    .data_out   (data_out)
+    .clk            (clk),
+    .a_reset_n      (a_reset_n),
+    .data_in        (data_in),
+    .opcode         (opcode),
+    .acc_overflow   (acc_overflow),
+    .acc_zero       (acc_zero),
+    .data_out       (data_out)
 );
 
 always
@@ -74,9 +71,19 @@ initial begin
     opcode = ALU_AND; #10; // bitwise and
     data_in = 8'h05; opcode = ALU_REGA; #10; // load register A
     opcode = ALU_OR; #10; // bitwise or
-    data_in = 8'h0F; opcode = ALU_REGA; #10; // load regsiter A
+    data_in = 8'h0F; opcode = ALU_REGA; #10; // load register A
     opcode = ALU_SUB; #10; // subtraction
-    opcode = ALU_OUT; #10; // output the result
+    opcode = ALU_OUT; #10; // output the result "0x00"
+    
+    opcode = ALU_RESET; #10 // reset the accumulator
+    
+    //// Overflow ////
+    
+    data_in = 8'h0F; opcode = ALU_REGA; #10; // load register A
+    opcode = ALU_ADD; # 10 // addition
+    data_in = 8'h10; opcode = ALU_REGA; #10; // load register A
+    opcode = ALU_SUB; #10; // subtraction
+    opcode = ALU_OUT; // output the result "0xFF"
     
 end
 
