@@ -91,7 +91,7 @@ always@(posedge clk or negedge a_reset_n) begin
     if (a_reset_n == 1'b0) // asynchronous reset
         bus_shift_reg <= {BUS_LATENCY{1'b0}};
     else if (bus_delay == 1'b1)
-        bus_shift_reg <= {(BUS_LATENCY-1){1'b0}} & bus_active;
+        bus_shift_reg <= {{(BUS_LATENCY-1){1'b0}},bus_active};
     else
         bus_shift_reg <= {bus_shift_reg[BUS_LATENCY-2:0],bus_active};
 end
@@ -125,9 +125,11 @@ localparam [ROM_READ_DELAY-1:0] ROM_DELAY = {ROM_READ_DELAY{1'b1}};
 wire                     rom_delay;
 reg [ROM_READ_DELAY-1:0] rom_shift_reg;
 
-always@(posedge clk) begin
-    if (rom_delay == 1'b1)
-        rom_shift_reg <= {(ROM_READ_DELAY-2){1'b0}} & rom_enable;
+always@(posedge clk or negedge a_reset_n) begin
+    if (a_reset_n == 1'b0) // asynchronous reset
+        rom_shift_reg <= {ROM_READ_DELAY{1'b0}};
+    else if (rom_delay == 1'b1)
+        rom_shift_reg <= {{(ROM_READ_DELAY-1){1'b0}},rom_enable};
     else
         rom_shift_reg <= {rom_shift_reg[ROM_READ_DELAY-2:0],rom_enable};
 end
