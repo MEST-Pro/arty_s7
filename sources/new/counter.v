@@ -29,20 +29,31 @@ module counter #(
     input  wire                   load, 
     input  wire [COUNT_WIDTH-1:0] load_data,
     input  wire                   increment,
-    output reg  [COUNT_WIDTH-1:0] counter
+    output wire                   out_of_range,
+    output wire [COUNT_WIDTH-1:0] counter
 );
 
-always @ (posedge clk or negedge a_reset_n)
+reg [COUNT_WIDTH:0] counter_reg;
+
+always @ (posedge clk or negedge a_reset_n) begin
     
     if (a_reset_n == 1'b0) // asynchronous reset
-       counter <= {COUNT_WIDTH{1'b0}};
+       counter_reg <= {(COUNT_WIDTH+1){1'b0}};
     else if (reset == 1'b1) // processor reset
-        counter <= {COUNT_WIDTH{1'b0}};
+       counter_reg <= {(COUNT_WIDTH+1){1'b0}};
     else if (load == 1'b1) // load the counter
-       counter <= load_data;
+       counter_reg <= {1'b0,load_data};
     else if (increment == 1'b1) // increment the counter
-       counter <= counter + 1'b1;
+       counter_reg <= counter_reg + 1'b1;
     else // if counting is disabled
-       counter <= counter;
+       counter_reg <= counter_reg;
+
+end
+
+// out of range if MSB is set
+assign out_of_range = counter_reg[COUNT_WIDTH];
+
+// LSB are the count
+assign counter = counter_reg[COUNT_WIDTH-1:0];
 
 endmodule

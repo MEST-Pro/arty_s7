@@ -31,9 +31,11 @@ module sap1_controller #(
     input  wire                  alu_acc_overflow,
     input  wire                  alu_acc_zero,
     input  wire [DATA_WIDTH-1:0] inst_reg,
+    input  wire                  pc_out_of_range,
     output reg                   pc_reset,
     output reg                   pc_load,
     output reg                   pc_increment,
+    output wire                  error_state,
     output reg                   addr_reg_en,
     output reg                   data_reg_en,
     output reg                   mem_wen,
@@ -57,11 +59,11 @@ localparam [4:0] ST_LOAD_READ_ADDR  = 5;
 localparam [4:0] ST_READ_DATA_MEM   = 6;
 localparam [4:0] ST_LOAD_OP_REG     = 7;
 localparam [4:0] ST_RUN_OPCODE      = 8;
-localparam [4:0] ST_OUT_REG         = 9;
-localparam [4:0] ST_LOAD_WRITE_ADDR = 10;
-localparam [4:0] ST_LOAD_WRITE_DATA = 11;
-localparam [4:0] ST_WRITE_DATA_MEM  = 12;
-localparam [4:0] ST_LOAD_PC         = 13;
+localparam [4:0] ST_LOAD_WRITE_ADDR = 9;
+localparam [4:0] ST_LOAD_WRITE_DATA = 10;
+localparam [4:0] ST_WRITE_DATA_MEM  = 11;
+localparam [4:0] ST_LOAD_PC         = 12;
+localparam [4:0] ST_UPDATE_OUTPUT   = 13;
 localparam [4:0] ST_LOAD_OUT_REG    = 14;
 localparam [4:0] ST_ERROR           = 15;
 localparam [4:0] ST_LOAD_ROM_ADDR   = 16;
@@ -91,7 +93,7 @@ always@(posedge clk or negedge a_reset_n) begin
     if (a_reset_n == 1'b0) // asynchronous reset
         bus_shift_reg <= {BUS_LATENCY{1'b0}};
     else if (bus_delay == 1'b1)
-        bus_shift_reg <= {{(BUS_LATENCY-1){1'b0}},bus_active};
+        bus_shift_reg <= {BUS_LATENCY{1'b0}};
     else
         bus_shift_reg <= {bus_shift_reg[BUS_LATENCY-2:0],bus_active};
 end
@@ -129,7 +131,7 @@ always@(posedge clk or negedge a_reset_n) begin
     if (a_reset_n == 1'b0) // asynchronous reset
         rom_shift_reg <= {ROM_READ_DELAY{1'b0}};
     else if (rom_delay == 1'b1)
-        rom_shift_reg <= {{(ROM_READ_DELAY-1){1'b0}},rom_enable};
+        rom_shift_reg <= {ROM_READ_DELAY{1'b0}};
     else
         rom_shift_reg <= {rom_shift_reg[ROM_READ_DELAY-2:0],rom_enable};
 end
@@ -168,7 +170,7 @@ always@(*) begin
         OP_ALU: decode_state = ST_RUN_OPCODE;
         OP_MAC: decode_state = ST_RUN_OPCODE;
         OP_BRANCH: decode_state = ST_LOAD_PC; 
-        OP_OUT: decode_state = ST_LOAD_OUT_REG;
+        OP_OUT: decode_state = ST_UPDATE_OUTPUT;
         OP_HLT: decode_state = ST_IDLE;
         default: decode_state = ST_ERROR;
     endcase
@@ -229,15 +231,15 @@ reg [3:0] load_mac_input;
 
 always@(*) begin
     case (inst_reg[11:8]) // decode register field
-        ALU_REGA: begin // ALU register A
+        REG_ALUA: begin // ALU register A
             load_alu_input = ALU_REGA;
             load_mac_input = MAC_NOOP;
         end
-        MAC_REGA: begin // MAC register A
+        REG_MACA: begin // MAC register A
             load_alu_input = ALU_NOOP;
             load_mac_input = MAC_REGA;
         end
-        MAC_REGB: begin // MAC register B
+        REG_MACB: begin // MAC register B
             load_alu_input = ALU_NOOP;
             load_mac_input = MAC_REGB;
         end
@@ -278,6 +280,8 @@ always@(*) begin
 end
 
 //////// State Machine Logic ////////
+
+assign error_state = (stateReg == ST_ERROR);
 
 always@(*) begin
     
@@ -356,12 +360,16 @@ always@(*) begin
         
         //////// Load Instruction Address ////////
         ST_LOAD_INST_ADDR: begin
-            bus_active = 1'b1;
-            bus_sel_in = BUS_SEL_PC; // drive PC onto the bus
-            if (bus_delay == 1'b1) begin
-                pc_increment = 1'b1; // increment PC for next instruction cycle
-                addr_reg_en = 1'b1; // load PC into memory address register
-                stateNext = ST_READ_INST_MEM;
+            if (pc_out_of_range == 1'b1) begin // program counter out of range
+                stateNext = ST_ERROR;
+            end else begin         
+                bus_active = 1'b1;
+                bus_sel_in = BUS_SEL_PC; // drive PC onto the bus
+                if (bus_delay == 1'b1) begin
+                    pc_increment = 1'b1; // increment PC for next instruction cycle
+                    addr_reg_en = 1'b1; // load PC into memory address register
+                    stateNext = ST_READ_INST_MEM;
+                end  
             end
         end
         
@@ -406,7 +414,11 @@ always@(*) begin
         //////// Load ALU/MAC Operand Regsiter ////////
         ST_LOAD_OP_REG: begin
             bus_active = 1'b1;
-            bus_sel_in = BUS_SEL_MEM; // drive the read data onto the bus
+            if (inst_reg[15:12] == OP_MOV)
+                bus_sel_in = BUS_SEL_CTRL; // drive value onto the bus
+            else
+                bus_sel_in = BUS_SEL_MEM; // drive the read data onto the bus
+            data_out[DATA_WIDTH-1:0] = {{(DATA_WIDTH/2){1'b0}},inst_reg[DATA_WIDTH/2-1:0]};
             if (bus_delay == 1'b1) begin
                 alu_opcode = load_alu_input;
                 mac_opcode = load_mac_input;
@@ -418,16 +430,9 @@ always@(*) begin
         ST_RUN_OPCODE: begin
             alu_opcode = decode_alu_opcode;
             mac_opcode = decode_mac_opcode;
-            stateNext = ST_OUT_REG; // update output register
-        end
-        
-        //////// Update Output ////////
-        ST_OUT_REG: begin
-            alu_opcode = load_alu_output;
-            mac_opcode = load_mac_output;
             stateNext = ST_LOAD_INST_ADDR; // fetch next instruction
         end
-        
+
         //////// Load Write Data Address ////////
         ST_LOAD_WRITE_ADDR: begin
             bus_active = 1'b1;
@@ -435,7 +440,7 @@ always@(*) begin
             data_out[ADDR_WIDTH-1:0] = inst_reg[ADDR_WIDTH-1:0];
             if (bus_delay == 1'b1) begin
                 addr_reg_en = 1'b1; // load read address to memory address register
-                stateNext = ST_LOAD_WRITE_DATA;
+                stateNext = ST_UPDATE_OUTPUT;
             end
         end
         
@@ -465,9 +470,19 @@ always@(*) begin
                     pc_load = 1'b1; // load branch address to program counter
                     stateNext = ST_LOAD_INST_ADDR; // fetch next instruction
                 end
-             else
+             end else begin
                 stateNext = ST_LOAD_INST_ADDR; // fetch next instruction         
              end
+        end
+        
+        //////// Update ALU/MAC Output ////////
+        ST_UPDATE_OUTPUT: begin
+            alu_opcode = load_alu_output;
+            mac_opcode = load_mac_output;
+            if (inst_reg[15:12] == OP_OUT)
+                stateNext = ST_LOAD_OUT_REG; // load output register
+            else
+                stateNext = ST_LOAD_WRITE_DATA; // write data to memory
         end
         
         //////// Load Output Register ////////

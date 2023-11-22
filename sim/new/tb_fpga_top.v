@@ -84,10 +84,6 @@ initial begin
     //// Load Program ////
     
     BTN[1] = 1'b1; #10; // start program transfer
-    
-    for (i = 0; i < ROM_DEPTH; i = i + 1) begin
-        #80; // wait for instruction to update
-    end
 
 end
 

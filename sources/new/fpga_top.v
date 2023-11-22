@@ -87,17 +87,19 @@ clk_led clk_led_100MHz (
 wire                  pc_reset;
 wire                  pc_load;
 wire                  pc_increment;
+wire                  pc_out_of_range;
 wire [ADDR_WIDTH-1:0] pc_load_data;
 wire [ADDR_WIDTH-1:0] pc_counter;
 
 counter #(.COUNT_WIDTH(ADDR_WIDTH)) program_counter (  
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
-    .reset      (pc_reset),
-    .load       (pc_load), 
-    .load_data  (pc_load_data),
-    .increment  (pc_increment),
-    .counter    (pc_counter)
+    .clk            (clk100MHz),
+    .a_reset_n      (rst100MHz),
+    .reset          (pc_reset),
+    .load           (pc_load), 
+    .load_data      (pc_load_data),
+    .increment      (pc_increment),
+    .out_of_range   (pc_out_of_range),
+    .counter        (pc_counter)
 );
 
 //// Memory Address Register ////
@@ -224,6 +226,7 @@ bus_mux #(.NUM_INPUT(NUM_BUS_INPUT),.NUM_OUTPUT(NUM_BUS_OUTPUT),.SEL_BIT(3),.DAT
 
 //// Processor Controller ////
 
+wire                  error_state;
 wire [DATA_WIDTH-1:0] ctrl_data_out;
 
 sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH)) cpu_controller (
@@ -231,9 +234,11 @@ sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH)) cpu_controlle
     .a_reset_n          (rst100MHz),
     .start              (BTN[1]),
     .inst_reg           (inst_reg_data_out),
+    .pc_out_of_range    (pc_out_of_range),
     .pc_reset           (pc_reset),
     .pc_load            (pc_load),
     .pc_increment       (pc_increment),
+    .error_state        (error_state),
     .addr_reg_en        (addr_reg_en),
     .data_reg_en        (data_reg_en),
     .mem_wen            (mem_wen),
@@ -246,6 +251,8 @@ sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH)) cpu_controlle
     .bus_sel_in         (bus_sel_in),
     .data_out           (ctrl_data_out)
 );
+
+assign LED[2] = error_state; // light LED if error occurred
 
 //// Processor Bus Interface ////
 
