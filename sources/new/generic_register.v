@@ -27,6 +27,7 @@ module generic_register #(
     input  wire                  a_reset_n, // asynchronous reset
     input  wire                  enable,
     input  wire [REG_WIDTH-1:0]  data_in,
+    output wire                  valid,
     output wire [REG_WIDTH-1:0]  data_out
 );
 
@@ -42,5 +43,13 @@ end
 
 // output register contents
 assign data_out = reg_data;
+
+reg enable_reg;
+
+always@(posedge clk) begin
+    enable_reg <= enable;
+end
+
+assign valid = enable_reg;
 
 endmodule

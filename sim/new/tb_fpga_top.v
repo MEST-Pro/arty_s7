@@ -18,9 +18,11 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`timescale 1ns / 1ns
+`timescale 1ns / 1ps
 
 module tb_fpga_top;
+
+parameter CLK_PERIOD = 83.333;
 
 //////////////////////////////////////////////////////////////////////////////////
 // DUT
@@ -31,7 +33,7 @@ localparam ROM_DEPTH = 256;
 integer i; // loop variable
 
 // Oscillator
-reg CLK100MHZ;
+reg OSC12MHZ;
 // Buttons
 reg [3:0] BTN;
 // Slide Switches
@@ -45,7 +47,7 @@ wire [3:0] LED;
 
 fpga_top dut(
     // Oscillator
-    .CLK100MHZ(CLK100MHZ),
+    .OSC12MHZ(OSC12MHZ),
     // Buttons
     .BTN(BTN),
     // Slide Switches
@@ -59,7 +61,7 @@ fpga_top dut(
 );
 
 always
-    #5 CLK100MHZ = !CLK100MHZ;
+    #(CLK_PERIOD/2) OSC12MHZ = !OSC12MHZ;
 
 //////////////////////////////////////////////////////////////////////////////////
 // Test Bench
@@ -69,21 +71,21 @@ initial begin
     //// Initialization ////
 
     // default state
-    CLK100MHZ = 1'b0;
+    OSC12MHZ = 1'b0;
     BTN = 4'b0000;
     SW = 4'b0000;
     
     // power on reset
-    BTN[0] = 1'b1; #100;
+    BTN[0] = 1'b1; #10000;
     BTN[0] = 1'b0;
     
     // clock & reset
-    while (dut.pll_lock == 1'b0) #10; // wait for PLL lock
-    while (dut.s_reset == 1'b1) #10; // wait for reset to release
+    while (dut.pll_lock == 1'b0) #1000; // wait for PLL lock
+    while (dut.s_reset == 1'b1) #1000; // wait for reset to release
 
     //// Load Program ////
     
-    BTN[1] = 1'b1; #10; // start program transfer
+    BTN[1] = 1'b1; // start program transfer
 
 end
 

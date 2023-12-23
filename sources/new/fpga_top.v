@@ -22,7 +22,10 @@
 
 module fpga_top(
     // Local Oscillator
-    input CLK100MHZ,
+    input OSC100MHZ,
+    input OSC12MHZ,
+    // UART
+    output UART_TX,
     // Buttons
     input [3:0] BTN,
     // Slide Switches
@@ -40,20 +43,22 @@ localparam DATA_WIDTH = 16; // data bus width
 localparam ADDR_WIDTH = 8; // program counter width
 localparam RAM_DEPTH  = 2**ADDR_WIDTH; // instruction & data memory depth
 
-//// Phase Locked Loop ////
+//// Processor Phase Locked Loop ////
 
-wire clk100MHz;
+wire CLK115P2MHZ;
 wire pll_lock;
 wire pll_reset;
 
 assign pll_reset = BTN[0];
 
-fpga_pll fpga_pll_100MHz (
-    .clk_in     (CLK100MHZ), // input clock
-    .reset      (pll_reset), // input reset
-    .locked     (pll_lock),  // output locked
-    .clk100MHz  (clk100MHz)  // output clk100MHz
+fpga_pll fpga_pll_global (
+    .clk_in     (OSC12MHZ),
+    .reset      (pll_reset),
+    .locked     (pll_lock),
+    .clk_out    (CLK115P2MHZ)
 );
+
+assign LED[1] = pll_lock; // drive LED with pll lock status
 
 //// Reset Synchronzier ////
 
@@ -63,22 +68,22 @@ wire s_reset;
 // send reset pulse if pll unlocked or external reset asserted
 assign a_reset = ~pll_lock || pll_reset;
 
-rst_sync rst_sync_100MHz (  
-    .clk        (clk100MHz),
+rst_sync rst_sync_global (  
+    .clk        (CLK115P2MHZ),
     .a_reset    (a_reset),
     .s_reset    (s_reset)
 );
 
-wire rst100MHz; // active low reset
+wire RST115P2MHZ; // active low reset
 
-assign rst100MHz = !s_reset;
+assign RST115P2MHZ = !s_reset;
 
 //// Heartbeat Monitor ////
 
-// drive LED0 with 100MHZ heartbeat
-clk_led clk_led_100MHz (  
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
+// drive LED0 with heartbeat
+clk_led clk_led_heartbeat (  
+    .clk        (CLK115P2MHZ),
+    .a_reset_n  (RST115P2MHZ),
     .led_out    (LED[0])
 );
 
@@ -92,8 +97,8 @@ wire [ADDR_WIDTH-1:0] pc_load_data;
 wire [ADDR_WIDTH-1:0] pc_counter;
 
 counter #(.COUNT_WIDTH(ADDR_WIDTH)) program_counter (  
-    .clk            (clk100MHz),
-    .a_reset_n      (rst100MHz),
+    .clk            (CLK115P2MHZ),
+    .a_reset_n      (RST115P2MHZ),
     .reset          (pc_reset),
     .load           (pc_load), 
     .load_data      (pc_load_data),
@@ -105,28 +110,32 @@ counter #(.COUNT_WIDTH(ADDR_WIDTH)) program_counter (
 //// Memory Address Register ////
 
 wire                  addr_reg_en;
+wire                  addr_reg_valid;
 wire [ADDR_WIDTH-1:0] addr_reg_data_in;
 wire [ADDR_WIDTH-1:0] addr_reg_data_out;
 
 generic_register #(.REG_WIDTH(ADDR_WIDTH)) addr_reg (  
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
+    .clk        (CLK115P2MHZ),
+    .a_reset_n  (RST115P2MHZ),
     .enable     (addr_reg_en),
     .data_in    (addr_reg_data_in),
+    .valid      (addr_reg_valid),
     .data_out   (addr_reg_data_out)
 );
 
 //// Memory Write Data Register ////
 
 wire                  data_reg_en;
+wire                  data_reg_valid;
 wire [DATA_WIDTH-1:0] data_reg_data_in;
 wire [DATA_WIDTH-1:0] data_reg_data_out;
 
 generic_register #(.REG_WIDTH(DATA_WIDTH)) data_reg (  
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
+    .clk        (CLK115P2MHZ),
+    .a_reset_n  (RST115P2MHZ),
     .enable     (data_reg_en),
     .data_in    (data_reg_data_in),
+    .valid      (data_reg_valid),
     .data_out   (data_reg_data_out)
 );
 
@@ -141,7 +150,7 @@ assign mem_addr = addr_reg_data_out;
 assign mem_wdata = data_reg_data_out;
 
 block_ram #(.ADDR_WIDTH(ADDR_WIDTH),.RAM_WIDTH(DATA_WIDTH),.RAM_DEPTH(RAM_DEPTH)) cpu_mem (  
-    .clk    (clk100MHz),
+    .clk    (CLK115P2MHZ),
     .wen    (mem_wen),
     .addr   (mem_addr),
     .wdata  (mem_wdata),
@@ -151,14 +160,16 @@ block_ram #(.ADDR_WIDTH(ADDR_WIDTH),.RAM_WIDTH(DATA_WIDTH),.RAM_DEPTH(RAM_DEPTH)
 //// Instruction Register ////
 
 wire                  inst_reg_en;
+wire                  inst_reg_valid;
 wire [DATA_WIDTH-1:0] inst_reg_data_in;
 wire [DATA_WIDTH-1:0] inst_reg_data_out;
 
 generic_register #(.REG_WIDTH(DATA_WIDTH)) inst_reg (  
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
+    .clk        (CLK115P2MHZ),
+    .a_reset_n  (RST115P2MHZ),
     .enable     (inst_reg_en),
     .data_in    (inst_reg_data_in),
+    .valid      (inst_reg_valid),
     .data_out   (inst_reg_data_out)
 );
 
@@ -171,8 +182,8 @@ wire [DATA_WIDTH-1:0] alu_data_in;
 wire [DATA_WIDTH-1:0] alu_data_out;
 
 alu #(.DATA_WIDTH(DATA_WIDTH)) alu_unit (  
-    .clk            (clk100MHz),
-    .a_reset_n      (rst100MHz),
+    .clk            (CLK115P2MHZ),
+    .a_reset_n      (RST115P2MHZ),
     .acc_overflow   (alu_acc_overflow),
     .acc_zero       (alu_acc_zero),
     .data_in        (alu_data_in),
@@ -187,8 +198,8 @@ wire [DATA_WIDTH-1:0] mac_data_in;
 wire [DATA_WIDTH-1:0] mac_data_out;
 
 mac #(.DATA_WIDTH(DATA_WIDTH)) mac_unit ( 
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
+    .clk        (CLK115P2MHZ),
+    .a_reset_n  (RST115P2MHZ),
     .data_in    (mac_data_in),
     .opcode     (mac_opcode),
     .data_out   (mac_data_out)
@@ -197,15 +208,27 @@ mac #(.DATA_WIDTH(DATA_WIDTH)) mac_unit (
 //// Output Register ////
 
 wire                  out_reg_en;
+wire                  out_reg_valid;
 wire [DATA_WIDTH-1:0] out_reg_data_in;
 wire [DATA_WIDTH-1:0] out_reg_data_out;
 
 generic_register #(.REG_WIDTH(DATA_WIDTH)) out_reg (  
-    .clk        (clk100MHz),
-    .a_reset_n  (rst100MHz),
+    .clk        (CLK115P2MHZ),
+    .a_reset_n  (RST115P2MHZ),
     .enable     (out_reg_en),
     .data_in    (out_reg_data_in),
+    .valid      (out_reg_valid),
     .data_out   (out_reg_data_out)
+);
+
+//// UART Transmitter ////
+
+uart_top #(.DATA_WIDTH(DATA_WIDTH),.CLOCK_PER_BIT(1000)) uart_top_inst (  
+    .clk            (CLK115P2MHZ),
+    .a_reset_n      (RST115P2MHZ),
+    .data_en        (out_reg_valid),
+    .data_in        (out_reg_data_in),
+    .uart_out       (UART_TX)
 );
 
 //// Processor Bus ////
@@ -218,7 +241,7 @@ wire [2:0]                           bus_sel_in;
 wire [NUM_BUS_OUTPUT*DATA_WIDTH-1:0] bus_data_out;
 
 bus_mux #(.NUM_INPUT(NUM_BUS_INPUT),.NUM_OUTPUT(NUM_BUS_OUTPUT),.SEL_BIT(3),.DATA_WIDTH(DATA_WIDTH)) cpu_bus (
-    .clk        (clk100MHz),
+    .clk        (CLK115P2MHZ),
     .data_in    (bus_data_in),
     .sel_in     (bus_sel_in),
     .data_out   (bus_data_out)
@@ -230,8 +253,8 @@ wire                  error_state;
 wire [DATA_WIDTH-1:0] ctrl_data_out;
 
 sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH)) cpu_controller (
-    .clk                (clk100MHz),
-    .a_reset_n          (rst100MHz),
+    .clk                (CLK115P2MHZ),
+    .a_reset_n          (RST115P2MHZ),
     .start              (BTN[1]),
     .inst_reg           (inst_reg_data_out),
     .pc_out_of_range    (pc_out_of_range),

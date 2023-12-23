@@ -55,12 +55,12 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk100MHz__100.00000______0.000______50.0______137.681____105.461
+// _clk_out__115.20000______0.000______50.0______491.470____663.293
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________100____________0.010
+// __primary______________12____________0.010
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -71,7 +71,7 @@
   fpga_pll instance_name
    (
     // Clock out ports
-    .clk100MHz(clk100MHz),     // output clk100MHz
+    .clk_out(clk_out),     // output clk_out
     // Status and control signals
     .reset(reset), // input reset
     .locked(locked),       // output locked

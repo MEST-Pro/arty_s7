@@ -2,14 +2,14 @@
 # set_property -dict { PACKAGE_PIN C18 IOSTANDARD LVCMOS33 } [get_ports { RESET }];
 
 # Oscillator (ASFLM-100.000MHZ-LR-T)
-set_property -dict { PACKAGE_PIN R2 IOSTANDARD SSTL135 } [get_ports { CLK100MHZ }];
+set_property -dict { PACKAGE_PIN R2 IOSTANDARD SSTL135 } [get_ports { OSC100MHZ }];
+create_clock -period 10.000 -waveform {0.000 5.000} -add [get_ports { OSC100MHZ }] # define clock
+set_input_jitter [get_clocks -of_objects [get_ports OSC100MHZ]] 0.100 # set clock jitter
 
-create_clock -period 10.000 [get_ports { CLK100MHZ }]; # define clock
-
-set_input_jitter [get_clocks -of_objects [get_ports CLK100MHZ]] 0.100 # set clock jitter
-
-# Oscillator (ASEM1-100.000MHZ-LC-T)
-# set_property -dict { PACKAGE_PIN F14 IOSTANDARD LVCMOS33 } [get_ports { CLK12MHZ }];
+# Oscillator
+set_property -dict { PACKAGE_PIN F14 IOSTANDARD LVCMOS33 } [get_ports { OSC12MHZ }];
+create_clock -add -name sys_clk_pin -period 83.333 -waveform {0 41.667} [get_ports OSC12MHZ] # define clock
+set_input_jitter [get_clocks -of_objects [get_ports OSC12MHZ]] 0.833 # set clock jitter
 
 # Buttons
 set_property -dict { PACKAGE_PIN G15 IOSTANDARD LVCMOS33 } [get_ports { BTN[0] }];
@@ -39,7 +39,7 @@ set_property -dict { PACKAGE_PIN H15 IOSTANDARD LVCMOS33 } [get_ports { LED[3] }
 
 # UART
 # set_property -dict { PACKAGE_PIN V12 IOSTANDARD LVCMOS33 } [get_ports { UART_RX }];
-# set_property -dict { PACKAGE_PIN R12 IOSTANDARD LVCMOS33 } [get_ports { UART_TX }];
+set_property -dict { PACKAGE_PIN R12 IOSTANDARD LVCMOS33 } [get_ports { UART_TX }];
 
 # Quad SPI
 # set_property -dict { PACKAGE_PIN M13 IOSTANDARD LVCMOS33 } [get_ports { QSPI_CS_N }];

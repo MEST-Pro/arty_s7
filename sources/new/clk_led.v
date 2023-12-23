@@ -29,7 +29,7 @@ module clk_led #(
 );
 
 // count for 1 second
-localparam [COUNT_WIDTH-1:0] COUNT_LIMIT = 32'h05F5E0FF;
+localparam [COUNT_WIDTH-1:0] COUNT_LIMIT = 115200000;
 
 reg led_state;
 reg [COUNT_WIDTH-1:0] counter;
