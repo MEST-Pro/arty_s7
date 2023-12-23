@@ -1,0 +1,35 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 20.11-s111_1, built Mon Apr 26 11:57:38 PDT 2021
+Options: 
+Date:    Sat Dec 23 14:25:05 2023
+Host:    esl-cnc194563s.coeit.osu.edu (x86_64 w/Linux 3.10.0-1160.99.1.el7.x86_64) (6cores*12cpus*2physical cpus*Intel(R) Xeon(R) CPU X5675 @ 3.07GHz 12288KB) (98824492KB)
+PID:     20085
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (15 seconds elapsed).
+
+WARNING: This version of the tool is 971 days old.
+@genus:root: 1> elaborate asic_top
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+        : Specify libraries using read_libs or read_mmmc.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 44s, ST: 14s, FG: 14s, CPU: 10.3%}, MEM {curr: 0.8G, peak: 0.8G, phys curr: 0.2G, phys peak: 0.2G}, SYS {load: 1.6, cpu: 12, total: 94.2G, free: 3.1G}
+Abnormal exit.

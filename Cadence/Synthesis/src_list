@@ -1,0 +1,14 @@
+/home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v
+/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+
+/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+
