@@ -10,7 +10,7 @@ current_design mest_pro
 
 # Clock Creation 
 
-create_clock -name "CLK" -add -period 10 -waveform {0.0 5} [get_ports CLK]
+create_clock -name "CLK100MHZ" -add -period 10 -waveform {0.0 5} [get_ports CLK100MHZ]
 
 ####################################################################
 
@@ -24,7 +24,7 @@ set_load 0.05 [all_outputs]
 #Specified clock timing to be met with 10ps uncertainity
 
 
-set_clock_uncertainty 1.0 [get_clocks clk]
+set_clock_uncertainty 1.0 [get_clocks CLK100MHZ]
 
 #############################################################
 

@@ -10,5 +10,7 @@
 /home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v
 /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
 
+/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
 /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+
 

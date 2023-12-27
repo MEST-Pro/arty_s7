@@ -198,14 +198,6 @@ add mapped point mest_pro/cpu_bus/data_in_reg[5][4]/q mest_pro/cpu_bus/data_in_r
 add mapped point mest_pro/cpu_bus/data_in_reg[5][5]/q mest_pro/cpu_bus/data_in_reg_reg[5][5]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/data_in_reg[5][6]/q mest_pro/cpu_bus/data_in_reg_reg[5][6]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/data_in_reg[5][7]/q mest_pro/cpu_bus/data_in_reg_reg[5][7]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][8]/q mest_pro/cpu_bus/data_in_reg_reg[5][8]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][9]/q mest_pro/cpu_bus/data_in_reg_reg[5][9]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][10]/q mest_pro/cpu_bus/data_in_reg_reg[5][10]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][11]/q mest_pro/cpu_bus/data_in_reg_reg[5][11]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][12]/q mest_pro/cpu_bus/data_in_reg_reg[5][12]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][13]/q mest_pro/cpu_bus/data_in_reg_reg[5][13]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][14]/q mest_pro/cpu_bus/data_in_reg_reg[5][14]/Q  -type DFF DFF
-add mapped point mest_pro/cpu_bus/data_in_reg[5][15]/q mest_pro/cpu_bus/data_in_reg_reg[5][15]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/data_out_reg[0][0]/q mest_pro/cpu_bus/data_out_reg_reg[0][0]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/data_out_reg[0][1]/q mest_pro/cpu_bus/data_out_reg_reg[0][1]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/data_out_reg[0][2]/q mest_pro/cpu_bus/data_out_reg_reg[0][2]/Q  -type DFF DFF
@@ -241,6 +233,7 @@ add mapped point mest_pro/cpu_bus/data_sel_reg[15]/q mest_pro/cpu_bus/data_sel_r
 add mapped point mest_pro/cpu_bus/sel_reg[0]/q mest_pro/cpu_bus/sel_reg_reg[0]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/sel_reg[1]/q mest_pro/cpu_bus/sel_reg_reg[1]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_bus/sel_reg[2]/q mest_pro/cpu_bus/sel_reg_reg[2]/Q  -type DFF DFF
+add mapped point mest_pro/cpu_controller/genblk1.sap1_program_rom/douta/q mest_pro/cpu_controller/genblk1.sap1_program_rom/douta_reg/Q  -type DFF DFF
 add mapped point mest_pro/cpu_controller/startReg/q mest_pro/cpu_controller/startReg_reg/Q  -type DFF DFF
 add mapped point mest_pro/cpu_controller/bus_shift_reg[0]/q mest_pro/cpu_controller/bus_shift_reg_reg[0]/Q  -type DFF DFF
 add mapped point mest_pro/cpu_controller/bus_shift_reg[1]/q mest_pro/cpu_controller/bus_shift_reg_reg[1]/Q  -type DFF DFF
@@ -4537,5 +4530,3 @@ add mapped point mest_pro/rst_sync_100MHz/shift_reg[0]/q mest_pro/rst_sync_100MH
 
 
 //Empty Modules as Blackboxes
-add mapped point mest_pro/cpu_controller/sap1_program_rom mest_pro/cpu_controller/sap1_program_rom -type BBOX BBOX
-add mapped point mest_pro/fpga_pll_100MHz mest_pro/fpga_pll_100MHz -type BBOX BBOX

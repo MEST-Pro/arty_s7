@@ -38,7 +38,7 @@ module asic_top (
 
 mest_pro_top #(.ASIC(1)) mest_pro(
     // Local Oscillator
-    .CLK100MHZ   (CLK100MHZ),
+    .i_CLK100MHZ   (CLK100MHZ),
     // Buttons
     .BTN         (BTN),
     // Slide Switches

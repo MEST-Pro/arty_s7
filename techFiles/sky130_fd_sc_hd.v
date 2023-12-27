@@ -115279,7 +115279,7 @@ module sky130_fd_sc_hd__sdfrbp_1 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, CLK_delayed, SCD_delayed, SCE_delayed, D_delayed, CONDB, SLEEPB_delayed, SETB_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, CLK_delayed, SCD_delayed, SCE_delayed, D_delayed, CONDB, SLEEPB_delayed, SETB_delayed; 
 reg notifier;
 
 specify
@@ -115488,7 +115488,7 @@ module sky130_fd_sc_hd__sdfrbp_2 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, CLK_delayed, SCD_delayed, SCE_delayed, D_delayed, CONDB, SLEEPB_delayed, SETB_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, CLK_delayed, SCD_delayed, SCE_delayed, D_delayed, CONDB, SLEEPB_delayed, SETB_delayed; 
 reg notifier;
 
 specify
@@ -116081,7 +116081,7 @@ module sky130_fd_sc_hd__sdfrtn_1 (
 */
 
 
-wire AWAKE, COND0, COND1, RESETB_delayed, CLKN_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND4, RESETB_delayed, CLKN_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 specify
@@ -116666,7 +116666,7 @@ module sky130_fd_sc_hd__sdfrtp_1 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 
@@ -116870,7 +116870,7 @@ module sky130_fd_sc_hd__sdfrtp_2 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 
@@ -117070,7 +117070,7 @@ module sky130_fd_sc_hd__sdfrtp_4 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 
@@ -117674,7 +117674,7 @@ module sky130_fd_sc_hd__sdfsbp_1 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 specify
@@ -117884,7 +117884,7 @@ module sky130_fd_sc_hd__sdfsbp_2 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 specify
@@ -118468,7 +118468,7 @@ module sky130_fd_sc_hd__sdfstp_1 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 
@@ -118669,7 +118669,7 @@ module sky130_fd_sc_hd__sdfstp_2 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 
@@ -118869,7 +118869,7 @@ module sky130_fd_sc_hd__sdfstp_4 (
  * SPDX-License-Identifier: Apache-2.0
 */
 
-wire AWAKE, COND0, COND1, COND2, COND3, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
+wire AWAKE, COND0, COND1, COND2, COND3, COND4, RESETB_delayed, SETB_delayed, CLK_delayed, D_delayed, SCD_delayed, SCE_delayed; 
 reg notifier;
 
 specify

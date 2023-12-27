@@ -2197,3 +2197,8 @@ Output file: ./Reports/asic_top_POWER.rpt
 @file(syn.tcl) 48: report messages > $vars(RPT_PATH)/$vars(FILE_NAME).txt
 #@ End verbose source ./syn.tcl
 WARNING: This version of the tool is 971 days old.
+@genus:root: 2> gui_show
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 74767s, ST: 2872s, FG: 2872s, CPU: 10.5%}, MEM {curr: 1.4G, peak: 1.4G, phys curr: 0.7G, phys peak: 0.7G}, SYS {load: 1.5, cpu: 12, total: 94.2G, free: 2.5G}
+Abnormal exit.

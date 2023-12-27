@@ -24,7 +24,7 @@ module mest_pro_top #(
     parameter ASIC = 0
 )(
     // Local Oscillator
-    input CLK100MHZ,
+    input i_CLK100MHZ,
     // Buttons
     input [3:0] BTN,
     // Slide Switches
@@ -34,7 +34,9 @@ module mest_pro_top #(
     output [1:0] GLED,
     output [1:0] BLED,
     // User LED
-    output [3:0] LED
+    output [3:0] LED,
+    //output reg
+    output [15:0] out_reg_data_out
 );
 
 // define processor parameter
@@ -46,16 +48,32 @@ localparam RAM_DEPTH  = 2**ADDR_WIDTH; // instruction & data memory depth
 
 wire clk100MHz;
 wire pll_lock;
+reg  pll_lock_reg;
 wire pll_reset;
+reg [15:0] asic_pll_ctr;
+localparam ASIC_PLL_CTR_MAX = 512;
 
 assign pll_reset = BTN[0];
 
-fpga_pll fpga_pll_100MHz (
-    .clk_in     (CLK100MHZ), // input clock
-    .reset      (pll_reset), // input reset
-    .locked     (pll_lock),  // output locked
-    .clk100MHz  (clk100MHz)  // output clk100MHz
-);
+generate
+  if( ASIC == 0) begin
+    fpga_pll fpga_pll_100MHz (
+        .clk_in     (i_CLK100MHZ), // input clock
+        .reset      (pll_reset), // input reset
+        .locked     (pll_lock),  // output locked
+        .clk100MHz  (clk100MHz)  // output clk100MHz
+    );
+  end else begin
+    assign clk100MHz = i_CLK100MHZ;
+    assign pll_lock  = pll_lock_reg;
+    always@(posedge clk100MHz) begin
+      if((asic_pll_ctr > ASIC_PLL_CTR_MAX) && (pll_lock_reg == 0))
+        pll_lock_reg <= 1;
+      else if(pll_lock_reg == 0)
+        asic_pll_ctr <= asic_pll_ctr + 1;
+    end
+  end
+endgenerate
 
 //// Reset Synchronzier ////
 
@@ -202,7 +220,7 @@ wire                  out_reg_en;
 wire [DATA_WIDTH-1:0] out_reg_data_in;
 wire [DATA_WIDTH-1:0] out_reg_data_out;
 
-generic_register #(.REG_WIDTH(DATA_WIDTH)) out_reg (  
+generic_register #(.REG_WIDTH(DATA_WIDTH)) output_register (  
     .clk        (clk100MHz),
     .a_reset_n  (rst100MHz),
     .enable     (out_reg_en),
@@ -231,7 +249,7 @@ bus_mux #(.NUM_INPUT(NUM_BUS_INPUT),.NUM_OUTPUT(NUM_BUS_OUTPUT),.SEL_BIT(3),.DAT
 wire                  error_state;
 wire [DATA_WIDTH-1:0] ctrl_data_out;
 
-sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH)) cpu_controller (
+sap1_controller #(.DATA_WIDTH(DATA_WIDTH),.ADDR_WIDTH(ADDR_WIDTH),.ASIC(ASIC)) cpu_controller (
     .clk                (clk100MHz),
     .a_reset_n          (rst100MHz),
     .start              (BTN[1]),

@@ -23,7 +23,8 @@
 module sap1_controller #(
     parameter BUS_LATENCY = 3,
     parameter ADDR_WIDTH = 4,
-    parameter DATA_WIDTH = 8
+    parameter DATA_WIDTH = 8,
+    parameter ASIC       = 0
 )(  
     input  wire                  clk,
     input  wire                  a_reset_n, // asynchronous reset
@@ -111,12 +112,22 @@ reg                  rom_enable;
 reg  [ROM_ADDR-1:0]  rom_addr;
 wire [ROM_WIDTH-1:0] rom_rdata;
 
-fpga_rom sap1_program_rom (
-  .clka     (clk),
-  .ena      (rom_enable),
-  .addra    (rom_addr),
-  .douta    (rom_rdata)
-);
+generate
+  if(ASIC == 0)
+    fpga_rom sap1_program_rom (
+      .clka     (clk),
+      .ena      (rom_enable),
+      .addra    (rom_addr),
+      .douta    (rom_rdata)
+    );
+  else
+    asic_rom sap1_program_rom (
+      .clka     (clk),
+      .ena      (rom_enable),
+      .addra    (rom_addr),
+      .douta    (rom_rdata)
+    );
+endgenerate
 
 //// Read ROM Data ////
 
