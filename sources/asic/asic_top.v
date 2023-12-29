@@ -32,7 +32,8 @@ module asic_top (
     output [1:0] GLED,
     output [1:0] BLED,
     // User LED
-    output [3:0] LED
+    output [3:0] LED,
+    output [15:0] out_reg_data_out
 );
 
 
@@ -48,7 +49,8 @@ mest_pro_top #(.ASIC(1)) mest_pro(
     .GLED        (GLED),
     .BLED        (BLED),
     // User LED
-    .LED         (LED)
+    .LED         (LED),
+    .out_reg_data_out(out_reg_data_out)
 );
 
 endmodule

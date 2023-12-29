@@ -134,7 +134,7 @@ wire                  addr_reg_en;
 wire [ADDR_WIDTH-1:0] addr_reg_data_in;
 wire [ADDR_WIDTH-1:0] addr_reg_data_out;
 
-generic_register #(.REG_WIDTH(ADDR_WIDTH)) addr_reg (  
+generic_register #(.REG_WIDTH(ADDR_WIDTH)) address_register (  
     .clk        (clk100MHz),
     .a_reset_n  (rst100MHz),
     .enable     (addr_reg_en),
@@ -148,7 +148,7 @@ wire                  data_reg_en;
 wire [DATA_WIDTH-1:0] data_reg_data_in;
 wire [DATA_WIDTH-1:0] data_reg_data_out;
 
-generic_register #(.REG_WIDTH(DATA_WIDTH)) data_reg (  
+generic_register #(.REG_WIDTH(DATA_WIDTH)) data_register (  
     .clk        (clk100MHz),
     .a_reset_n  (rst100MHz),
     .enable     (data_reg_en),
@@ -180,7 +180,7 @@ wire                  inst_reg_en;
 wire [DATA_WIDTH-1:0] inst_reg_data_in;
 wire [DATA_WIDTH-1:0] inst_reg_data_out;
 
-generic_register #(.REG_WIDTH(DATA_WIDTH)) inst_reg (  
+generic_register #(.REG_WIDTH(DATA_WIDTH)) instruction_register (  
     .clk        (clk100MHz),
     .a_reset_n  (rst100MHz),
     .enable     (inst_reg_en),
