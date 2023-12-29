@@ -26,19 +26,44 @@ module asic_rom #(
 )(  
       input  wire clka,
       input  wire ena,
-      input  wire addra,
-      output  reg douta,
+      input  wire[ADDR_WIDTH-1:0] addra,
+      output reg [D_WIDTH-1 : 0]  douta
 );
                                       
 
-reg [DEPTH-1 : 0] ROM[D_WIDTH-1 : 0];
+reg [D_WIDTH-1 : 0] ROM[0 : DEPTH-1];
 
-always@(*) begin
-  ROM[0] = 16'h5000; ROM[1] = 16'h310F; ROM[2] = 16'h321A; ROM[3] = 16'h5100;
-  ROM[4] = 16'h5200; ROM[5] = 16'h3126; ROM[6] = 16'h3205; ROM[7] = 16'h5100;
-  ROM[8] = 16'h5200; ROM[9] = 16'h3103; ROM[10] = 16'h3211; ROM[11] = 16'h5100;
-  ROM[12] = 16'h5200; ROM[13] = 16'h6100; ROM[14] = 16'h6200; ROM[15] = 16'hF000;
-end
+assign ROM[0]  = 16'h5000;
+assign ROM[1]  = 16'h310F;
+assign ROM[2]  = 16'h321A;
+assign ROM[3]  = 16'h5100;
+assign ROM[4]  = 16'h5200;
+assign ROM[5]  = 16'h3126;
+assign ROM[6]  = 16'h3205;
+assign ROM[7]  = 16'h5100;
+assign ROM[8]  = 16'h5200;
+assign ROM[9]  = 16'h3103;
+assign ROM[10] = 16'h3211;
+assign ROM[11] = 16'h5100;
+assign ROM[12] = 16'h5200;
+assign ROM[13] = 16'h6100;
+assign ROM[14] = 16'h6200;
+assign ROM[15] = 16'hF000;
+
+genvar i;
+generate
+for(i = 16; i<DEPTH; i = i + 1)
+  assign ROM[i] = 0;
+endgenerate
+
+
+
+//always@(*) begin
+//  ROM[0] = 16'h5000; ROM[1] = 16'h310F; ROM[2] = 16'h321A; ROM[3] = 16'h5100;
+//  ROM[4] = 16'h5200; ROM[5] = 16'h3126; ROM[6] = 16'h3205; ROM[7] = 16'h5100;
+//  ROM[8] = 16'h5200; ROM[9] = 16'h3103; ROM[10] = 16'h3211; ROM[11] = 16'h5100;
+//  ROM[12] = 16'h5200; ROM[13] = 16'h6100; ROM[14] = 16'h6200; ROM[15] = 16'hF000;
+//end
 
 always@(posedge clka) begin
   if (ena == 1)

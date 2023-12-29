@@ -1,0 +1,1715 @@
+vlib work
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:24:35 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# 
+# Top level modules:
+# 	tb_asic_top
+# End time: 21:24:35 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:25:04 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# ** Error: (vlog-13038) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(31): near ")": Missing port in ansi port list.
+# End time: 21:25:04 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:25:04 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v 
+# -- Compiling module asic_top
+# 
+# Top level modules:
+# 	asic_top
+# End time: 21:25:04 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:25:15 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# ** Error: (vlog-13038) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(31): near ")": Missing port in ansi port list.
+# End time: 21:25:15 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:25:35 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 21:25:36 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:25:41 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v 
+# -- Compiling module asic_top
+# 
+# Top level modules:
+# 	asic_top
+# End time: 21:25:41 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:25:47 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v 
+# -- Compiling module asic_top
+# 
+# Top level modules:
+# 	asic_top
+# End time: 21:25:47 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v 
+# -- Compiling module alu
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(35): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(48): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(49): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(50): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(51): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(52): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(53): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(54): (vlog-2730) Undefined variable: 'ALU_LSHIFT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(55): (vlog-2730) Undefined variable: 'ALU_RSHIFT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(56): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(57): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# End time: 21:26:02 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v 
+# -- Compiling module block_ram
+# 
+# Top level modules:
+# 	block_ram
+# End time: 21:26:02 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v 
+# -- Compiling module bus_mux
+# 
+# Top level modules:
+# 	bus_mux
+# End time: 21:26:02 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v 
+# -- Compiling module bus_tristate
+# 
+# Top level modules:
+# 	bus_tristate
+# End time: 21:26:02 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v 
+# -- Compiling module clk_led
+# 
+# Top level modules:
+# 	clk_led
+# End time: 21:26:02 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 21:26:03 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:03 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v 
+# -- Compiling module generic_register
+# 
+# Top level modules:
+# 	generic_register
+# End time: 21:26:03 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:26:11 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v 
+# -- Compiling module alu
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(35): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(48): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(49): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(50): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(51): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(52): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(53): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(54): (vlog-2730) Undefined variable: 'ALU_LSHIFT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(55): (vlog-2730) Undefined variable: 'ALU_RSHIFT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(56): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(57): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# End time: 21:26:11 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:27:03 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh 
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh(2): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# End time: 21:27:04 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:31:50 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh 
+# -- Compiling package sap1_header_vh_unit
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:31:50 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+# Cannot determine language of /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_alu.coe
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:32:33 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v 
+# -- Compiling module mac
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(34): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(51): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(52): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(53): (vlog-2730) Undefined variable: 'MAC_MULT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(54): (vlog-2730) Undefined variable: 'MAC_ACC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(55): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(56): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(57): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# End time: 21:32:34 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 8, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac_example.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:32:34 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac_example.v 
+# -- Compiling module mac_example
+# 
+# Top level modules:
+# 	mac_example
+# End time: 21:32:34 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:32:34 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# ** Error (suppressible): /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(221): (vlog-2388) 'out_reg_data_out' already declared in this scope (mest_pro_top) at /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(39).
+# End time: 21:32:34 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:32:34 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v 
+# -- Compiling module rst_sync
+# 
+# Top level modules:
+# 	rst_sync
+# End time: 21:32:34 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:32:43 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v 
+# -- Compiling module mac
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(34): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(51): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(52): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(53): (vlog-2730) Undefined variable: 'MAC_MULT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(54): (vlog-2730) Undefined variable: 'MAC_ACC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(55): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(56): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(57): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# End time: 21:32:43 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:33:14 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v 
+# -- Compiling module mac
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(34): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(51): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(52): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(53): (vlog-2730) Undefined variable: 'MAC_MULT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(54): (vlog-2730) Undefined variable: 'MAC_ACC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(55): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(56): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(57): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# End time: 21:33:14 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:33:33 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh 
+# -- Compiling package sap1_header_vh_unit
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:33:33 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:33:43 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v 
+# -- Compiling module mac
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(34): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(51): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(52): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(53): (vlog-2730) Undefined variable: 'MAC_MULT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(54): (vlog-2730) Undefined variable: 'MAC_ACC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(55): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(56): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(57): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# End time: 21:33:43 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:34:00 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# ** Error (suppressible): /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(221): (vlog-2388) 'out_reg_data_out' already declared in this scope (mest_pro_top) at /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(39).
+# End time: 21:34:00 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:34:21 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# ** Error (suppressible): /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(221): (vlog-2388) 'out_reg_data_out' already declared in this scope (mest_pro_top) at /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(39).
+# End time: 21:34:21 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:35:52 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 21:35:52 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:36:13 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(197): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(201): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(206): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(207): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(221): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(224): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(228): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(232): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(233): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(247): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(250): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(254): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(258): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(259): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(272): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(307): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(308): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(355): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(411): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(428): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(429): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(431): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(450): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(478): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(493): (vlog-2730) Undefined variable: 'OP_OUT'.
+# End time: 21:36:13 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 64, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:36:41 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh 
+# -- Compiling package sap1_header_vh_unit
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:36:41 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:37:02 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(197): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(201): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(206): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(207): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(221): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(224): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(228): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(232): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(233): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(247): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(250): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(254): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(258): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(259): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(272): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(307): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(308): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(355): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(411): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(428): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(429): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(431): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(450): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(478): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(493): (vlog-2730) Undefined variable: 'OP_OUT'.
+# End time: 21:37:02 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 64, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:42:35 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# End time: 21:42:35 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:42:40 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh 
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh(2): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# End time: 21:42:40 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:42:52 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# End time: 21:42:52 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth
+cd ..
+# reading modelsim.ini
+cd ..
+# reading /opt/local/mentor/modelsim-de-2020.4/modelsim_dlx/linuxpe/../modelsim.ini
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/Cadence
+ls
+# PnR
+# Simulation
+# Synthesis
+cd ..
+ls
+# Cadence
+# coe
+# constrs
+# Default.view
+# gen
+# ip_user_files
+# reference
+# sim
+# sources
+# techFiles
+# update.tcl
+cd sources/common
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:49:07 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# End time: 21:49:07 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth
+cd ../../../sources/common
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/sources/common
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/sources/common
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:50:53 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# End time: 21:50:53 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v +incdir+../../../../../sources/common
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:53:50 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v "+incdir+../../../../../sources/common" 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "../../../../../sources/common/sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# End time: 21:53:50 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+# /opt/local/mentor/modelsim-de-2020.4/modelsim_dlx/linuxpe/vlog failed.
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v +incdir+../../../sources/common
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:55:48 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v "+incdir+../../../sources/common" 
+# -- Compiling module sap1_controller
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(51): Cannot open `include file "../../../sources/common/sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(177): (vlog-2730) Undefined variable: 'OP_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(178): (vlog-2730) Undefined variable: 'OP_LOAD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(179): (vlog-2730) Undefined variable: 'OP_STORE'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(180): (vlog-2730) Undefined variable: 'OP_MOV'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(181): (vlog-2730) Undefined variable: 'OP_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(182): (vlog-2730) Undefined variable: 'OP_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(183): (vlog-2730) Undefined variable: 'OP_BRANCH'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(184): (vlog-2730) Undefined variable: 'OP_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(185): (vlog-2730) Undefined variable: 'OP_HLT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(199): (vlog-2730) Undefined variable: 'MAC_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(202): (vlog-2730) Undefined variable: 'ALU_NOOP'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(219): (vlog-2730) Undefined variable: 'REG_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(220): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(223): (vlog-2730) Undefined variable: 'REG_MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(225): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(227): (vlog-2730) Undefined variable: 'REG_MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(229): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(245): (vlog-2730) Undefined variable: 'REG_ALUA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(246): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(249): (vlog-2730) Undefined variable: 'REG_MACA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(251): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(253): (vlog-2730) Undefined variable: 'REG_MACB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(255): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(270): (vlog-2730) Undefined variable: 'BUS_SEL_ALU'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(271): (vlog-2730) Undefined variable: 'BUS_SEL_MAC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(283): (vlog-2730) Undefined variable: 'BRANCH_EQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(284): (vlog-2730) Undefined variable: 'BRANCH_NEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(285): (vlog-2730) Undefined variable: 'BRANCH_GT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(286): (vlog-2730) Undefined variable: 'BRANCH_GTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(287): (vlog-2730) Undefined variable: 'BRANCH_LT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(288): (vlog-2730) Undefined variable: 'BRANCH_LTEQ'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(325): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(326): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(335): (vlog-2730) Undefined variable: 'BUS_SEL_CTRL'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(378): (vlog-2730) Undefined variable: 'BUS_SEL_PC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v(396): (vlog-2730) Undefined variable: 'BUS_SEL_MEM'.
+# End time: 21:55:48 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 37, Warnings: 0
+# /opt/local/mentor/modelsim-de-2020.4/modelsim_dlx/linuxpe/vlog failed.
+pwd
+# /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:57:35 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v 
+# -- Compiling module sap1_controller
+# 
+# Top level modules:
+# 	sap1_controller
+# End time: 21:57:35 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:57:41 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v 
+# -- Compiling module mac
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(34): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(51): (vlog-2730) Undefined variable: 'MAC_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(52): (vlog-2730) Undefined variable: 'MAC_REGB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(53): (vlog-2730) Undefined variable: 'MAC_MULT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(54): (vlog-2730) Undefined variable: 'MAC_ACC'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(55): (vlog-2730) Undefined variable: 'MAC_MSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(56): (vlog-2730) Undefined variable: 'MAC_LSW'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v(57): (vlog-2730) Undefined variable: 'MAC_RESET'.
+# End time: 21:57:41 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:58:13 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v 
+# -- Compiling module mac
+# 
+# Top level modules:
+# 	mac
+# End time: 21:58:13 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:58:30 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v 
+# -- Compiling module rst_sync
+# 
+# Top level modules:
+# 	rst_sync
+# End time: 21:58:30 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.bus_tristate
+# vsim work.bus_tristate 
+# Start time: 21:58:50 on Dec 28,2023
+# ** Error (suppressible): (vsim-12110) The -novopt option has no effect on this product. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 21:58:51 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:59:13 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# 
+# Top level modules:
+# 	tb_asic_top
+# End time: 21:59:13 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 21:59:30 on Dec 28,2023
+# //  ModelSim DE 2020.4 Oct 13 2020 Linux 3.10.0-1160.99.1.el7.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading sv_std.std
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# ** Error: (vsim-3033) Instantiation of 'alu' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 193
+#         Searched libraries:
+#             /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth/work
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Error loading design
+# End time: 21:59:31 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 21:59:49 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v 
+# -- Compiling module alu
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(35): Cannot open `include file "sap1_header.vh".
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(48): (vlog-2730) Undefined variable: 'ALU_REGA'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(49): (vlog-2730) Undefined variable: 'ALU_ADD'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(50): (vlog-2730) Undefined variable: 'ALU_SUB'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(51): (vlog-2730) Undefined variable: 'ALU_AND'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(52): (vlog-2730) Undefined variable: 'ALU_OR'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(53): (vlog-2730) Undefined variable: 'ALU_XOR'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(54): (vlog-2730) Undefined variable: 'ALU_LSHIFT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(55): (vlog-2730) Undefined variable: 'ALU_RSHIFT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(56): (vlog-2730) Undefined variable: 'ALU_OUT'.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v(57): (vlog-2730) Undefined variable: 'ALU_RESET'.
+# End time: 21:59:49 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:00:25 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 22:00:25 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:00:34 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading sv_std.std
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 209
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(209): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+run -alll
+# Unknown option: alll
+# ** UI-Msg: (vsim-4005) Invalid argument '-alll'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+run -all
+# Break key hit
+# Break in Module generic_register at /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v line 36
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+quit -sim
+# End time: 22:04:03 on Dec 28,2023, Elapsed time: 0:03:29
+# Errors: 0, Warnings: 6
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:04:23 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading sv_std.std
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 209
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(209): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 48
+quit -sim
+# End time: 22:14:37 on Dec 28,2023, Elapsed time: 0:10:14
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:14:53 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:14:54 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:15:00 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 210
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(210): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module generic_register at /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v line 36
+quit -sim
+# End time: 22:17:57 on Dec 28,2023, Elapsed time: 0:02:57
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:18:06 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:18:06 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:18:11 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 211
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(211): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module bus_mux in file /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v
+quit -sim
+# End time: 22:22:30 on Dec 28,2023, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:25:01 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:25:01 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:25:07 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 48
+quit -sim
+# End time: 22:29:12 on Dec 28,2023, Elapsed time: 0:04:05
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:29:22 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:29:22 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:29:35 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 214
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(214): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 48
+quit -sim
+# End time: 22:33:36 on Dec 28,2023, Elapsed time: 0:04:01
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:33:52 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:33:53 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:34:04 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 48
+quit -sim
+# End time: 22:37:24 on Dec 28,2023, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:37:42 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:37:42 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:37:50 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+# Break key hit
+# Break in Module generic_register at /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v line 36
+quit -sim
+# End time: 22:40:21 on Dec 28,2023, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:40:34 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v 
+# -- Compiling module mest_pro_top
+# 
+# Top level modules:
+# 	mest_pro_top
+# End time: 22:40:34 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 22:40:42 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/*
+run -a
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/cpu_controller/*
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 48
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+run -a
+# Break key hit
+# Break in Module mac at /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v line 102
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'addra'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(29).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'douta'. The port definition is at: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(30).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom File: /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v Line: 184
+run -a
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth/wave.do
+# Break key hit
+# Break in Module sap1_controller at /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v line 153
+quit -sim
+# End time: 23:04:38 on Dec 28,2023, Elapsed time: 0:23:56
+# Errors: 0, Warnings: 6
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:04:47 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:04:47 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:04:57 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+do wave.do
+run -a
+add wave -position insertpoint  \
+sim:/tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom/ROM
+# Break key hit
+# Break in Module generic_register at /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v line 36
+quit -sim
+# End time: 23:08:37 on Dec 28,2023, Elapsed time: 0:03:40
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:45 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:08:46 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:08:53 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+do wave.do
+run -a
+add wave -position insertpoint sim:/tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom/*
+add wave -position insertpoint  \
+sim:/tb_asic_top/dut/mest_pro/cpu_controller/genblk1/sap1_program_rom/ROM
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth/wave.do
+# Break key hit
+# Break in Module mac at /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v line 102
+quit -sim
+# End time: 23:13:29 on Dec 28,2023, Elapsed time: 0:04:36
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:13:43 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:13:43 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:13:52 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+do wave.do
+run -a
+# Break key hit
+# Break in Module clk_led at /home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v line 49
+quit -sim
+# End time: 23:16:10 on Dec 28,2023, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:16:15 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:16:16 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Break key hit
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:16:39 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:16:39 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:16:46 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+do wave.do
+run -a
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 23:19:55 on Dec 28,2023, Elapsed time: 0:03:09
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:20:12 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:20:12 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:20:19 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+do wave.do
+run -a
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 23:25:16 on Dec 28,2023, Elapsed time: 0:04:57
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:25:29 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# ** Error: (vlog-13069) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(54): near "generate": syntax error, unexpected generate, expecting ';' or ','.
+# ** Error: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v(55): (vlog-13205) Syntax error found in the scope following 'i'. Is there a missing '::'?
+# End time: 23:25:29 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# /opt/local/mentor/modelsim-de-2020.4/modelsim_dlx/linuxpe/vlog failed.
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:26:03 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v 
+# -- Compiling module asic_rom
+# 
+# Top level modules:
+# 	asic_rom
+# End time: 23:26:03 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:26:07 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+do wave.do
+run -a
+# Break key hit
+# Break in Module generic_register at /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v line 36
+quit -sim
+# End time: 23:35:51 on Dec 28,2023, Elapsed time: 0:09:44
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:36:04 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# ** Error: (vlog-13069) /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v(98): near "end": syntax error, unexpected end.
+# End time: 23:36:05 on Dec 28,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# /opt/local/mentor/modelsim-de-2020.4/modelsim_dlx/linuxpe/vlog failed.
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:36:47 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# 
+# Top level modules:
+# 	tb_asic_top
+# End time: 23:36:47 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:36:52 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+run -all
+# Test Passed!
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 48
+quit -sim
+# End time: 23:37:17 on Dec 28,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:37:46 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# 
+# Top level modules:
+# 	tb_asic_top
+# End time: 23:37:46 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:37:59 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+run -a
+# Test Failed!: Expected: 0x277 Actual: 0x277
+# Break key hit
+# Break in Module bus_mux at /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v line 59
+quit -sim
+# End time: 23:38:47 on Dec 28,2023, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 4
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:39:16 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# ** Error: (vlog-13069) /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v(99): near "end": syntax error, unexpected end, expecting ';'.
+# End time: 23:39:16 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /opt/local/mentor/modelsim-de-2020.4/modelsim_dlx/linuxpe/vlog failed.
+vlog -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+# Model Technology ModelSim DE vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:39:34 on Dec 28,2023
+# vlog -reportprogress 300 -work work /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v 
+# -- Compiling module tb_asic_top
+# 
+# Top level modules:
+# 	tb_asic_top
+# End time: 23:39:34 on Dec 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_asic_top
+# vsim work.tb_asic_top 
+# Start time: 23:39:39 on Dec 28,2023
+# Loading work.tb_asic_top
+# Loading work.asic_top
+# Loading work.mest_pro_top
+# Loading work.rst_sync
+# Loading work.clk_led
+# Loading work.counter
+# Loading work.generic_register
+# Loading work.block_ram
+# Loading work.alu
+# Loading work.mac
+# Loading work.bus_mux
+# Loading work.sap1_controller
+# Loading work.asic_rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mest_pro'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro File: /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v Line: 39
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v(39): [TFMPC] - Missing connection for port 'out_reg_data_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mac_unit'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_asic_top/dut/mest_pro/mac_unit File: /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v Line: 215
+# ** Warning: (vsim-3722) /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v(215): [TFMPC] - Missing connection for port 'acc_overflow'.
+run -a
+# Test Passed!
+# ** Note: $finish    : /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v(97)
+#    Time: 45220 ns  Iteration: 0  Instance: /tb_asic_top
+# End time: 23:39:52 on Dec 28,2023, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 4

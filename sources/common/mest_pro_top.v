@@ -67,10 +67,16 @@ generate
     assign clk100MHz = i_CLK100MHZ;
     assign pll_lock  = pll_lock_reg;
     always@(posedge clk100MHz) begin
-      if((asic_pll_ctr > ASIC_PLL_CTR_MAX) && (pll_lock_reg == 0))
-        pll_lock_reg <= 1;
-      else if(pll_lock_reg == 0)
+      if((asic_pll_ctr <= ASIC_PLL_CTR_MAX) && pll_lock_reg == 0)
         asic_pll_ctr <= asic_pll_ctr + 1;
+      else if((asic_pll_ctr > ASIC_PLL_CTR_MAX) && (pll_lock_reg == 0))
+        pll_lock_reg <= 1;
+      else if (pll_lock_reg == 1)
+        pll_lock_reg <= 1;
+      else begin
+        pll_lock_reg <= 0;
+        asic_pll_ctr <= 0; 
+      end
     end
   end
 endgenerate
@@ -218,7 +224,6 @@ mac #(.DATA_WIDTH(DATA_WIDTH)) mac_unit (
 
 wire                  out_reg_en;
 wire [DATA_WIDTH-1:0] out_reg_data_in;
-wire [DATA_WIDTH-1:0] out_reg_data_out;
 
 generic_register #(.REG_WIDTH(DATA_WIDTH)) output_register (  
     .clk        (clk100MHz),

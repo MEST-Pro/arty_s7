@@ -84,6 +84,18 @@ initial begin
     
     BTN[1] = 1'b1; #10; // start program transfer
 
+    // Wait for program  to load and execute
+    #40000
+
+    // Check output register
+    if(dut.mest_pro.out_reg_data_out == 16'h0277)
+      $display("Test Passed!");
+    else
+      $display("Test Failed!: Expected: 0x%0h Actual: 0x%0h", 16'h0277, dut.mest_pro.out_reg_data_out);
+
+    #20
+    $stop;
+
 end
 
 endmodule

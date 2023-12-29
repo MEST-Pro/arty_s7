@@ -1,0 +1,381 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth
+valu
+!s110 1703818825
+!i10b 1
+!s100 17HTzR>b8QgScYK<JVLbf1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I5dzRBI7<245SPi4UVYb;j2
+R0
+w1703818818
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v
+!i122 21
+L0 23 108
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OP;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1703818825.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/alu.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vasic_rom
+!s110 1703823963
+!i10b 1
+!s100 nzfT35@G5HS=Zi?UPg`0k2
+R1
+Ie<T=R11=oOz827_lLF[DH3
+R0
+w1703823958
+8/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v
+!i122 35
+L0 22 53
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703823963.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_rom.v|
+!i113 1
+R4
+R5
+vasic_top
+!s110 1703816747
+!i10b 1
+!s100 IgW2g`g0[87A[UNWiX[CF3
+R1
+IEDQ`gHUo7>WC25CTILNU:1
+R0
+w1703439133
+8/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v
+!i122 4
+Z6 L0 23 32
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703816747.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/asic/asic_top.v|
+!i113 1
+R4
+R5
+vblock_ram
+Z7 !s110 1703816762
+!i10b 1
+!s100 2fo5c>55SoQeCCG0PlceG2
+R1
+IQMfm[FZ`Xk;lSz3B5^AWO0
+R0
+Z8 w1703280346
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v
+!i122 5
+L0 22 26
+R2
+R3
+r1
+!s85 0
+31
+Z9 !s108 1703816762.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/block_ram.v|
+!i113 1
+R4
+R5
+vbus_mux
+R7
+!i10b 1
+!s100 VPhcQmLQ:O2GS5o9KmKkI0
+R1
+IRcl[YloOXfh[ZM^zW:EWA1
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v
+!i122 6
+L0 23 52
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_mux.v|
+!i113 1
+R4
+R5
+vbus_tristate
+R7
+!i10b 1
+!s100 :<V<N<]`a<W:glFBFL8KJ1
+R1
+IfB=_`fCZLCFP7]jgU`]Zg2
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v
+!i122 7
+L0 23 34
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/bus_tristate.v|
+!i113 1
+R4
+R5
+vclk_led
+R7
+!i10b 1
+!s100 @@nnTGbS;X6]djgD=_g8i0
+R1
+I`f9n0THgDWKeFzd<U=]I72
+R0
+w1703358672
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v
+!i122 8
+L0 23 39
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/clk_led.v|
+!i113 1
+R4
+R5
+vcounter
+Z10 !s110 1703816763
+!i10b 1
+!s100 XBk9:k>O7>HgEQDIf3kB]0
+R1
+ICbdUR65X99hmBlS2=Ell@2
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v
+!i122 9
+L0 23 37
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/counter.v|
+!i113 1
+R4
+R5
+vgeneric_register
+R10
+!i10b 1
+!s100 oVMmM4_PcDDFWN0[HNJ^D0
+R1
+I9AEEoJ`S6GWYM;j>7Dbo_3
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v
+!i122 10
+L0 23 24
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703816763.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/generic_register.v|
+!i113 1
+R4
+R5
+vmac
+!s110 1703818693
+!i10b 1
+!s100 ITCYNL?i75j9ZnW2K:i401
+R1
+IIB=8<i3m;=D5?EC86MjOO0
+R0
+w1703818683
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v
+!i122 18
+L0 23 104
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703818693.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/mac.v|
+!i113 1
+R4
+R5
+vmac_example
+!s110 1703817154
+!i10b 1
+!s100 =CkM0AKeHnF4cU@3J6BX`3
+R1
+IdhFIQSJid1iP=`zJ=5OB`0
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/mac_example.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/mac_example.v
+!i122 12
+R6
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703817154.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/mac_example.v|
+!s90 -F=/home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth/vlog.opt|-F=|-reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/mac_example.v|
+!i113 1
+R4
+tVlog01Compat 1 CvgOpt 0
+vmest_pro_top
+!s110 1703821234
+!i10b 1
+!s100 QIMjHFP2>J?h6iRYAFa602
+R1
+IbizcF5`D<G]^4@W7@@;Z>0
+R0
+w1703821206
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v
+!i122 28
+L0 23 279
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703821234.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/mest_pro_top.v|
+!i113 1
+R4
+R5
+vrst_sync
+!s110 1703818710
+!i10b 1
+!s100 8fU_=OUd@;Gzi0n_ICl3`2
+R1
+I``VD1nz:MQIbY<KQadzRZ0
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v
+!i122 19
+L0 23 20
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703818710.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/rst_sync.v|
+!i113 1
+R4
+R5
+vsap1_controller
+!s110 1703818655
+!i10b 1
+!s100 >Y=gYTgL<c>?X<4E_>O`Q0
+R1
+IPz5X5NTCo<Qn6c6OaooPI1
+R0
+w1703818633
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v
+!i122 17
+L0 23 557
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703818655.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_controller.v|
+!i113 1
+R4
+R5
+Xsap1_header_vh_unit
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1703817401
+V=_aK2HTSHKl]_1H2?38@z3
+r1
+!s85 0
+!i10b 1
+!s100 Z<8O>j>F2Vf[Y1][?JAcI2
+I=_aK2HTSHKl]_1H2?38@z3
+!i103 1
+S1
+R0
+R8
+8/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+F/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh
+!i122 16
+L0 2 0
+R3
+31
+!s108 1703817401.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh|
+!s90 -F=/home/stasi.3/Mest_proj/arty_s7/Cadence/Simulation/pre-synth/vlog.opt|-F=|-reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sources/common/sap1_header.vh|
+!i113 1
+R4
+tSvlog 1 CvgOpt 0
+vtb_asic_top
+!s110 1703824774
+!i10b 1
+!s100 :U:I76WE2fO98_GI[Aj990
+R1
+IU8>?0[1i0n[NbZH?]ahL`3
+R0
+w1703824763
+8/home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+F/home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v
+!i122 38
+L0 23 79
+R2
+R3
+r1
+!s85 0
+31
+!s108 1703824774.000000
+!s107 /home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v|
+!s90 -reportprogress|300|-work|work|/home/stasi.3/Mest_proj/arty_s7/sim/new/tb_asic_top.v|
+!i113 1
+R4
+R5
