@@ -94,7 +94,7 @@ initial begin
       $display("Test Failed!: Expected: 0x%0h Actual: 0x%0h", 16'h0277, dut.mest_pro.out_reg_data_out);
 
     #20
-    $stop;
+    $stop; 
 
 end
 
