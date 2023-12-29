@@ -31,7 +31,7 @@ module asic_rom #(
 );
                                       
 
-reg [D_WIDTH-1 : 0] ROM[0 : DEPTH-1];
+wire [D_WIDTH-1 : 0] ROM[0 : DEPTH-1];
 
 assign ROM[0]  = 16'h5000;
 assign ROM[1]  = 16'h310F;
